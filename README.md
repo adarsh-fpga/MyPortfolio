@@ -1,58 +1,55 @@
-# Adarsh Thakur - Portfolio
+# Adarsh Kumar Thakur - Portfolio
 
-🔗 **Live Site:** [adarsh-fpga.github.io/masterPortfolio](https://adarsh-fpga.github.io/masterPortfolio)
+Live site: [adarsh-fpga.github.io/adarsh-portfolio](https://adarsh-fpga.github.io/adarsh-portfolio/)
 
-A personal portfolio website showcasing my work as a VLSI and FPGA Engineer.
+Personal portfolio for my work as a VLSI & FPGA Engineer.
 
-## About Me
+## About
 
-Passionate VLSI and FPGA Engineer specializing in digital design, verification, and secure hardware systems with hands-on experience in Verilog, SystemVerilog, AXI protocols, FPGA implementation, and SoC integration.
+VLSI and FPGA Engineer experienced in RTL design, verification, FPGA prototyping, AXI protocols, and SoC integration using Verilog/SystemVerilog.
 
-Currently working as a **Project Engineer (R&D)** at **CDAC Chennai**.
+Currently working as a Project Engineer at CDAC Chennai.
 
-## Tech Stack
+## Focus Areas
 
-- **Hardware:** Verilog, SystemVerilog, VHDL, UVM, AXI/AXI4-Stream
-- **Tools:** Vivado, QuestaSim, ModelSim, ActiveHDL, LTspice
-- **Programming:** C, C++
-- **Areas:** RTL Design, FPGA Implementation, SoC Integration, Functional Verification, Secure Hardware Design
+- RTL design with Verilog, SystemVerilog, and VHDL
+- FPGA prototyping, synthesis, implementation, and STA
+- SystemVerilog/UVM verification, assertions, and functional coverage
+- AXI and AXI4-Stream protocol verification
+- SoC integration with RISC-V, UART, GPIO, timers, and memory interfaces
+- Embedded C/C++ for hardware-software integration
 
-## Features
+## Projects
 
-- ✅ Splash Screen
-- ✅ Home Page with greeting and social links
-- ✅ Skills section showcasing VLSI/FPGA expertise
-- ✅ Education details
-- ✅ Work Experience and Internships
-- ✅ Certifications
-- ✅ Projects (Open Source)
-- ✅ Contact page
-- ✅ Dark/Light theme toggle
-- ✅ Fully responsive design
+- FIDO2 Hardware Authenticator
+- UVM-Based AXI4-Stream VIP
+- Gas Sensor System
+- Head-Tilt Controlled Wheelchair
 
-## Setup & Deployment
+## Local Development
 
-### Prerequisites
-- Node.js (v20 recommended)
-- npm
-
-### Local Development
 ```bash
 npm install
 npm start
 ```
 
-### Build for Production
+## Build
+
 ```bash
 npm run build
 ```
 
-### Deploy to GitHub Pages
-The site is automatically deployed via GitHub Actions on every push to the `master` branch.
+## Deployment
+
+The site is configured for GitHub Pages at:
+
+```text
+https://adarsh-fpga.github.io/adarsh-portfolio/
+```
 
 ## Credits
 
-Built using [masterPortfolio](https://github.com/ashutosh1919/masterPortfolio) template by Ashutosh Hathidara.
+Based on the open-source [masterPortfolio](https://github.com/ashutosh1919/masterPortfolio) template by Ashutosh Hathidara.
 
 ## License
 

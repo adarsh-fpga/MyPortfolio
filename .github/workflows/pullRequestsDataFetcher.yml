@@ -1,4 +1,4 @@
-name: Pull Request Creation
+name: Pull Request Data Fetcher
 
 on:
   push:

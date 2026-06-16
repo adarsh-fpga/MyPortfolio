@@ -20,9 +20,10 @@ function SeoHeader() {
       sameAs.push(media.link);
     });
 
-  let mail = socialMediaLinks
-    .find((media) => media.link.startsWith("mailto"))
-    .link.substring("mailto:".length);
+  let mail =
+    socialMediaLinks
+      .find((media) => media.link.startsWith("mailto"))
+      ?.link.substring("mailto:".length) || "";
   let job = experience.sections
     ?.find((section) => section.work)
     ?.experiences?.at(0);
@@ -45,10 +46,10 @@ function SeoHeader() {
     email: mail,
     telephone: contactPageData.phoneSection?.subtitle,
     sameAs: sameAs,
-    jobTitle: job.title,
+    jobTitle: job?.title,
     worksFor: {
       "@type": "Organization",
-      name: job.company,
+      name: job?.company,
     },
     address: {
       "@type": "PostalAddress",
@@ -64,6 +65,7 @@ function SeoHeader() {
     <Helmet>
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
+      <meta name="keywords" content={seo.keywords} />
       <meta property="og:title" content={seo?.og?.title} />
       <meta property="og:type" content={seo?.og?.type} />
       <meta property="og:url" content={seo?.og?.url} />

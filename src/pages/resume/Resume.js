@@ -3,8 +3,6 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import { Fade } from "react-reveal";
 import "./Resume.css";
-// Resume PDF - replace with your own resume file when ready
-const myResumePdf = null;
 import { Document, Page, pdfjs } from "react-pdf";
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
@@ -19,7 +17,7 @@ export default class ResumePage extends Component {
       pageWidth: null,
       numPages: null,
       currentPage: 1,
-      isLoading: true,
+      isLoading: Boolean(greeting.resumeLink),
       error: null,
     };
   }
@@ -56,8 +54,7 @@ export default class ResumePage extends Component {
     });
   };
 
-  onDocumentLoadError = (error) => {
-    console.error("Error loading PDF:", error);
+  onDocumentLoadError = () => {
     this.setState({
       error: "Failed to load resume. Please try again later.",
       isLoading: false,
@@ -79,6 +76,7 @@ export default class ResumePage extends Component {
   render() {
     const theme = this.props.theme;
     const { pageWidth, numPages, currentPage, isLoading, error } = this.state;
+    const resumeAvailable = Boolean(greeting.resumeLink);
 
     return (
       <div className="resume-main">
@@ -86,26 +84,31 @@ export default class ResumePage extends Component {
         <div className="resume-view">
           <Fade bottom duration={2000} distance="40px">
             <div>
-              {/* Download Button */}
-              <div className="download-btn">
-                <Button
-                  text="📃 Download Resume"
-                  newTab={true}
-                  href={greeting.resumeLink}
-                  theme={theme}
-                />
-              </div>
+              {resumeAvailable && (
+                <div className="download-btn">
+                  <Button
+                    text="Download Resume"
+                    newTab={true}
+                    href={greeting.resumeLink}
+                    theme={theme}
+                  />
+                </div>
+              )}
 
-              {/* Loading State */}
-              {isLoading && !error && (
+              {!resumeAvailable && (
+                <div className="resume-error">
+                  <p>Resume PDF will be available soon.</p>
+                </div>
+              )}
+
+              {resumeAvailable && isLoading && !error && (
                 <div className="resume-loading">
                   <div className="loading-spinner"></div>
                   <p>Loading resume...</p>
                 </div>
               )}
 
-              {/* Error State */}
-              {error && (
+              {resumeAvailable && error && (
                 <div className="resume-error">
                   <svg
                     className="error-icon"
@@ -123,21 +126,13 @@ export default class ResumePage extends Component {
                     />
                   </svg>
                   <p>{error}</p>
-                  <button
-                    onClick={() => window.location.reload()}
-                    className="retry-btn"
-                    aria-label="Reload resume"
-                  >
-                    Try Again
-                  </button>
                 </div>
               )}
 
-              {/* PDF Document */}
-              {!error && (
+              {resumeAvailable && !error && (
                 <div className="resume-page">
                   <Document
-                    file={myResumePdf}
+                    file={greeting.resumeLink}
                     onLoadSuccess={this.onDocumentLoadSuccess}
                     onLoadError={this.onDocumentLoadError}
                     loading={
@@ -160,7 +155,6 @@ export default class ResumePage extends Component {
                     )}
                   </Document>
 
-                  {/* Pagination Controls */}
                   {numPages && numPages > 1 && (
                     <div className="pagination-controls">
                       <button
@@ -169,7 +163,7 @@ export default class ResumePage extends Component {
                         className="pagination-btn"
                         aria-label="Previous page"
                       >
-                        ← Previous
+                        Previous
                       </button>
                       <span className="page-info" aria-live="polite">
                         Page {currentPage} of {numPages}
@@ -180,7 +174,7 @@ export default class ResumePage extends Component {
                         className="pagination-btn"
                         aria-label="Next page"
                       >
-                        Next →
+                        Next
                       </button>
                     </div>
                   )}
@@ -189,7 +183,7 @@ export default class ResumePage extends Component {
             </div>
           </Fade>
         </div>
-        <Footer theme={theme} onToggle={this.props.onToggle}/>
+        <Footer theme={theme} onToggle={this.props.onToggle} />
         <TopButton theme={theme} />
       </div>
     );

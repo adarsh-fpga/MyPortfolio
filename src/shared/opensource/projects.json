@@ -2,22 +2,10 @@
   "data": [
     {
       "id": "project-1",
-      "name": "UVM-AXI4-Stream-VIP",
-      "createdAt": "2024-01-15T00:00:00Z",
-      "url": "https://github.com/adarsh-fpga",
-      "description": "Configurable AXI4-Stream Verification IP supporting master/slave modes with assertions, constrained-random verification, and functional coverage using UVM methodology.",
-      "isFork": false,
-      "languages": [
-        { "name": "SystemVerilog", "iconifyClass": "vscode-icons:file-type-systemverilog" },
-        { "name": "Verilog", "iconifyClass": "vscode-icons:file-type-verilog" }
-      ]
-    },
-    {
-      "id": "project-2",
-      "name": "FIDO2-Hardware-Authenticator",
+      "name": "FIDO2 Hardware Authenticator",
       "createdAt": "2024-06-01T00:00:00Z",
-      "url": "https://github.com/adarsh-fpga",
-      "description": "Secure authentication hardware integrating AES, SHA-256, HMAC, ECDSA, and TRNG modules with FPGA and RISC-V SoC platforms for FIDO2 protocol compliance.",
+      "url": "https://github.com/adarsh-fpga/FIDO2-Hardware-Authenticator",
+      "description": "Secure authentication hardware integrating AES, SHA-256, HMAC, ECDSA, and TRNG modules with FPGA and RISC-V SoC platforms.",
       "isFork": false,
       "languages": [
         { "name": "Verilog", "iconifyClass": "vscode-icons:file-type-verilog" },
@@ -25,23 +13,35 @@
       ]
     },
     {
+      "id": "project-2",
+      "name": "UVM-Based AXI4-Stream VIP",
+      "createdAt": "2024-01-15T00:00:00Z",
+      "url": "https://github.com/adarsh-fpga/UVM-Based-AXI4-Stream-VIP",
+      "description": "Configurable AXI4-Stream verification IP with master/slave support, assertions, constrained-random stimulus, and functional coverage.",
+      "isFork": false,
+      "languages": [
+        { "name": "SystemVerilog", "iconifyClass": "vscode-icons:file-type-systemverilog" },
+        { "name": "UVM", "iconifyClass": "carbon:chip" }
+      ]
+    },
+    {
       "id": "project-3",
-      "name": "Gas-Sensor-System",
+      "name": "Gas Sensor System",
       "createdAt": "2022-03-01T00:00:00Z",
-      "url": "https://github.com/adarsh-fpga",
-      "description": "Gas detection system with signal processing, threshold-based alarm indication, and safety features for industrial and residential applications.",
+      "url": "https://github.com/adarsh-fpga/Gas-Sensor-System",
+      "description": "Gas detection system with signal processing, threshold-based alarm indication, and safety features for industrial and residential use cases.",
       "isFork": false,
       "languages": [
         { "name": "C", "iconifyClass": "logos-c" },
-        { "name": "Verilog", "iconifyClass": "vscode-icons:file-type-verilog" }
+        { "name": "Embedded Systems", "iconifyClass": "mdi:developer-board" }
       ]
     },
     {
       "id": "project-4",
-      "name": "Head-Tilt-Controlled-Wheelchair",
+      "name": "Head-Tilt Controlled Wheelchair",
       "createdAt": "2022-06-01T00:00:00Z",
-      "url": "https://github.com/adarsh-fpga",
-      "description": "Wheelchair navigation system using head-motion sensing with safety and emergency stop mechanisms for physically challenged individuals.",
+      "url": "https://github.com/adarsh-fpga/Head-Tilt-Controlled-Wheelchair",
+      "description": "Wheelchair navigation system using head-motion sensing with safety and emergency-stop mechanisms.",
       "isFork": false,
       "languages": [
         { "name": "C", "iconifyClass": "logos-c" },
@@ -50,11 +50,11 @@
     },
     {
       "id": "project-5",
-      "name": "masterPortfolio",
-      "createdAt": "2025-06-01T00:00:00Z",
-      "url": "https://github.com/adarsh-fpga/masterPortfolio",
-      "description": "Personal portfolio website showcasing VLSI/FPGA engineering skills, projects, and professional experience.",
-      "isFork": true,
+      "name": "adarsh-portfolio",
+      "createdAt": "2026-06-16T00:00:00Z",
+      "url": "https://github.com/adarsh-fpga/adarsh-portfolio",
+      "description": "Personal portfolio website for VLSI, FPGA, RTL design, verification, and SoC integration work.",
+      "isFork": false,
       "languages": [
         { "name": "JavaScript", "iconifyClass": "logos-javascript" },
         { "name": "HTML", "iconifyClass": "logos-html-5" },

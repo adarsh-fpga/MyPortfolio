@@ -328,7 +328,7 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "animated_ashutosh.png",
+    profile_image_path: "profile_adarsh.png",
     description:
       "Feel free to reach out for collaborations, FPGA/VLSI discussions, RTL design, verification projects, or embedded system development opportunities.",
   },

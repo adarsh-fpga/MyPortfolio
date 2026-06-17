@@ -14,8 +14,11 @@ const onMouseOut = (event, color, bgColor) => {
 };
 
 export default function Button({ text, className, href, newTab, theme }) {
+  const publicUrl = process.env.PUBLIC_URL || "";
   const normalizedHref =
-    href && href.startsWith("/") ? `${process.env.PUBLIC_URL || ""}${href}` : href;
+    href && href.startsWith("/") && publicUrl && !href.startsWith(`${publicUrl}/`)
+      ? `${publicUrl}${href}`
+      : href;
 
   return (
     <div className={className}>

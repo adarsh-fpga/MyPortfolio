@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8fcc4dbc1ab43c58ad94fc044ca415de",
+    "revision": "6f8a96a8be23ced2b62c861f688a913f",
     "url": "/MyPortfolio/index.html"
   },
   {
-    "revision": "9b8ac4b0f6546da53d9f",
+    "revision": "a48bb1f65b42175259ea",
     "url": "/MyPortfolio/static/css/main.549c664e.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyPortfolio/static/js/2.2f8d8345.chunk.js"
   },
   {
-    "revision": "9b8ac4b0f6546da53d9f",
-    "url": "/MyPortfolio/static/js/main.3ab43eef.chunk.js"
+    "revision": "a48bb1f65b42175259ea",
+    "url": "/MyPortfolio/static/js/main.e66a9fac.chunk.js"
   },
   {
     "revision": "c31d902a10dae77e80da",
@@ -76,8 +76,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyPortfolio/static/media/certificate_logo.08c68af5.svg"
   },
   {
-    "revision": "cacbc42b661f39344af81c631d8d36a9",
-    "url": "/MyPortfolio/static/media/cloud_infrastructure.cacbc42b.svg"
+    "revision": "7afc132ac8c3c2026af4388c3da722ea",
+    "url": "/MyPortfolio/static/media/cloud_infrastructure.7afc132a.svg"
   },
   {
     "revision": "fee92c18b1cfbd1faa704c51047f113d",
@@ -88,12 +88,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyPortfolio/static/media/contactMail.d4c9ac42.png"
   },
   {
-    "revision": "c10d74ab1a9a8e18b0dfe6ac3094d40a",
-    "url": "/MyPortfolio/static/media/crrit_logo.2f055bcd.png"
+    "revision": "b28ab8109ba2da6c94882fefb7cdf8ab",
+    "url": "/MyPortfolio/static/media/crrit_logo.b8cc4116.png"
   },
   {
-    "revision": "8386198a6df18341a5d7ecc3b1f1052f",
-    "url": "/MyPortfolio/static/media/cu_logo.39873a14.png"
+    "revision": "7ac55219b09cb4c680952c73d1438a52",
+    "url": "/MyPortfolio/static/media/cu_logo.d3db93b5.png"
   },
   {
     "revision": "ebf35d7f33ebbd4a4c6cff7e66e21fdb",

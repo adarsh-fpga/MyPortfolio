@@ -8,32 +8,43 @@ class CertificationCard extends Component {
     const theme = this.props.theme;
     const logo = require(`../../assets/images/${certificate.logo_path}`);
     const logoSrc = logo.default || logo;
+    const cardMedia = (
+      <>
+        <div className="content-overlay"></div>
+        <div
+          className="cert-header"
+          style={{ backgroundColor: certificate.color_code }}
+        >
+          <img
+            className="logo_img"
+            src={logoSrc}
+            alt={certificate.alt_name}
+          />
+        </div>
+        {certificate.certificate_link && (
+          <div className="content-details fadeIn-top">
+            <h3 className="content-title" style={{ color: theme.body }}>
+              Certificate
+            </h3>
+          </div>
+        )}
+      </>
+    );
     return (
       <Fade bottom duration={2000} distance="20px">
         <div className="cert-card">
           <div className="content">
-            <a
-              href={certificate.certificate_link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="content-overlay"></div>
-              <div
-                className="cert-header"
-                style={{ backgroundColor: certificate.color_code }}
+            {certificate.certificate_link ? (
+              <a
+                href={certificate.certificate_link}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <img
-                  className="logo_img"
-                  src={logoSrc}
-                  alt={certificate.alt_name}
-                />
-              </div>
-              <div className="content-details fadeIn-top">
-                <h3 className="content-title" style={{ color: theme.body }}>
-                  Certificate
-                </h3>
-              </div>
-            </a>
+                {cardMedia}
+              </a>
+            ) : (
+              cardMedia
+            )}
           </div>
           <div className="cert-body">
             <h2 className="cert-body-title" style={{ color: theme.text }}>

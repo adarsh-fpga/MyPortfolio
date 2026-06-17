@@ -47,10 +47,6 @@ The site is configured for GitHub Pages at:
 https://adarsh-fpga.github.io/MyPortfolio/
 ```
 
-## Credits
-
-Based on the open-source [masterPortfolio](https://github.com/ashutosh1919/masterPortfolio) template by Ashutosh Hathidara.
-
 ## License
 
 MIT License

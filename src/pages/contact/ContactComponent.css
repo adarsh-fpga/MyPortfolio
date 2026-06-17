@@ -11,17 +11,9 @@
   display: flex;
 }
 
-.blog-heading-div {
-  display: flex;
-}
-
 .address-heading-div {
   display: flex;
   margin-top: 80px;
-}
-
-.blog-heading-div > * {
-  flex: 1;
 }
 
 .contact-heading-div > * {
@@ -38,16 +30,7 @@
   justify-content: center;
 }
 
-.blog-heading-img-div {
-  align-items: center;
-  justify-content: center;
-}
-
 .contact-heading-text-div {
-  text-align: center;
-}
-
-.blog-heading-text-div {
   text-align: center;
 }
 
@@ -60,9 +43,11 @@
   height: auto;
 }
 
-.blog-heading-img-div > * {
-  max-width: 100%;
-  height: auto;
+.contact-heading-img-div img {
+  max-width: 420px;
+  width: 82%;
+  border-radius: 50%;
+  box-shadow: rgba(0, 28, 85, 0.18) 0 18px 45px;
 }
 
 .contact-heading-text {
@@ -72,15 +57,6 @@
   line-height: 1.1;
   text-align: center;
   margin-top: 60px;
-}
-
-.blog-heading-text {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "Google Sans Medium";
-  line-height: 1.1;
-  text-align: center;
-  margin-top: 40px;
 }
 
 .address-heading-text {
@@ -99,22 +75,7 @@
   font-family: "Google Sans Medium";
 }
 
-.blog-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "Google Sans Medium";
-}
-
 .resume-btn-div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.blogsite-btn-div {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -133,10 +94,6 @@
     margin-top: 60px;
   }
 
-  .blog-heading-text {
-    font-size: 50px;
-    margin-top: 40px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -145,27 +102,13 @@
     margin-top: 0px;
   }
 
-  .blog-heading-text {
-    font-size: 30px;
-    margin-top: 0px;
-  }
-
   .address-heading-text {
     font-size: 20px;
-  }
-
-  .blog-heading-div {
-    flex-direction: column-reverse;
-    margin-top: 60px;
   }
 
   .address-heading-div {
     flex-direction: column;
     margin-top: 60px;
-  }
-
-  .blog-heading-text-div {
-    margin-top: 40px;
   }
 
   .address-heading-text-div {
@@ -184,11 +127,4 @@
     text-align: center;
   }
 
-  .blog-header-detail-text {
-    font-size: 16px;
-    margin-left: 0px;
-    margin-right: 0px;
-    line-height: normal;
-    text-align: center;
-  }
 }

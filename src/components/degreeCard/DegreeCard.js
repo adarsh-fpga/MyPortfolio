@@ -17,9 +17,9 @@ class DegreeCard extends Component {
             <div className="card-img">
               <img
                 style={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  transform: "scale(0.9)",
+                  maxWidth: "88%",
+                  maxHeight: "88%",
+                  objectFit: "contain",
                 }}
                 src={logoSrc}
                 alt={degree.alt_name}

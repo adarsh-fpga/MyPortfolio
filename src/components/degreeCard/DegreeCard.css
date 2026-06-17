@@ -20,14 +20,16 @@
 }
 
 .card-img {
-  width: 200px;
-  height: auto;
-  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  border-radius: 14px;
   padding: 10px;
   border: 1px solid #d9dbdf;
-  /* background-color: #6c63ff; */
-  /* background: transparent; */
+  background: #ffffff;
   box-shadow: 5px 5px 5px #d9dbdf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .body-header {

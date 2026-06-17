@@ -14,12 +14,16 @@ const onMouseOut = (event, color, bgColor) => {
 };
 
 export default function Button({ text, className, href, newTab, theme }) {
+  const normalizedHref =
+    href && href.startsWith("/") ? `${process.env.PUBLIC_URL || ""}${href}` : href;
+
   return (
     <div className={className}>
       <a
         className="main-button"
-        href={href}
-        target={newTab && "_blank"}
+        href={normalizedHref}
+        target={newTab ? "_blank" : undefined}
+        rel={newTab ? "noopener noreferrer" : undefined}
         style={{
           color: theme.body,
           backgroundColor: theme.text,

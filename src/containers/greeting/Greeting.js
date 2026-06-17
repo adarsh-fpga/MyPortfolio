@@ -4,10 +4,11 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
-import FeelingProud from "./FeelingProud";
 
 export default function Greeting(props) {
   const theme = props.theme;
+  const profileImage = require("../../assets/images/profile_photo.png");
+  const profileImageSrc = profileImage.default || profileImage;
   return (
     <Fade bottom duration={2000} distance="40px">
       <div className="greet-main" id="greeting">
@@ -29,6 +30,15 @@ export default function Greeting(props) {
                 {greeting.subTitle}
               </p>
               <SocialMedia theme={theme} />
+              <div className="button-greeting-div">
+                <Button
+                  text="Download Resume"
+                  newTab={true}
+                  href={greeting.resumeLink}
+                  theme={theme}
+                />
+                <Button text="Contact Me" href="/contact" theme={theme} />
+              </div>
               <div className="portfolio-repo-btn-div">
                 <Button
                   text="View Portfolio Repo"
@@ -45,7 +55,21 @@ export default function Greeting(props) {
             </div>
           </div>
           <div className="greeting-image-div">
-            <FeelingProud theme={theme} />
+            <div className="greeting-profile-card" aria-label="Adarsh Kumar Thakur profile">
+              <div className="greeting-profile-frame">
+                <img
+                  className="greeting-profile-img"
+                  src={profileImageSrc}
+                  alt="Adarsh Kumar Thakur"
+                />
+              </div>
+              <div className="greeting-chip-lines" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

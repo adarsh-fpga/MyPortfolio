@@ -4,7 +4,8 @@
       "id": "project-1",
       "name": "FIDO2 Hardware Authenticator",
       "createdAt": "2024-06-01T00:00:00Z",
-      "url": "https://github.com/adarsh-fpga/FIDO2-Hardware-Authenticator",
+      "url": "",
+      "status": "Repository will be added soon",
       "description": "Secure authentication hardware integrating AES, SHA-256, HMAC, ECDSA, and TRNG modules with FPGA and RISC-V SoC platforms.",
       "isFork": false,
       "languages": [
@@ -16,7 +17,8 @@
       "id": "project-2",
       "name": "UVM-Based AXI4-Stream VIP",
       "createdAt": "2024-01-15T00:00:00Z",
-      "url": "https://github.com/adarsh-fpga/UVM-Based-AXI4-Stream-VIP",
+      "url": "",
+      "status": "Repository will be added soon",
       "description": "Configurable AXI4-Stream verification IP with master/slave support, assertions, constrained-random stimulus, and functional coverage.",
       "isFork": false,
       "languages": [
@@ -28,7 +30,8 @@
       "id": "project-3",
       "name": "Gas Sensor System",
       "createdAt": "2022-03-01T00:00:00Z",
-      "url": "https://github.com/adarsh-fpga/Gas-Sensor-System",
+      "url": "",
+      "status": "Repository will be added soon",
       "description": "Gas detection system with signal processing, threshold-based alarm indication, and safety features for industrial and residential use cases.",
       "isFork": false,
       "languages": [
@@ -40,7 +43,8 @@
       "id": "project-4",
       "name": "Head-Tilt Controlled Wheelchair",
       "createdAt": "2022-06-01T00:00:00Z",
-      "url": "https://github.com/adarsh-fpga/Head-Tilt-Controlled-Wheelchair",
+      "url": "",
+      "status": "Repository will be added soon",
       "description": "Wheelchair navigation system using head-motion sensing with safety and emergency-stop mechanisms.",
       "isFork": false,
       "languages": [

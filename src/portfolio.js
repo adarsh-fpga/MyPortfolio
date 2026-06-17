@@ -15,7 +15,7 @@ const seo = {
   og: {
     title: "Adarsh Kumar Thakur Portfolio",
     type: "website",
-    url: "https://adarsh-fpga.github.io/adarsh-portfolio/",
+    url: "https://adarsh-fpga.github.io/MyPortfolio/",
   },
 };
 
@@ -26,7 +26,7 @@ const greeting = {
   subTitle:
     "VLSI and FPGA Engineer experienced in RTL design, verification, FPGA prototyping, AXI protocols, and SoC integration using Verilog/SystemVerilog.",
   resumeLink: "",
-  portfolio_repository: "https://github.com/adarsh-fpga/adarsh-portfolio",
+  portfolio_repository: "https://github.com/adarsh-fpga/MyPortfolio",
   githubProfile: "https://github.com/adarsh-fpga",
 };
 

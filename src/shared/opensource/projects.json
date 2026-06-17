@@ -50,9 +50,9 @@
     },
     {
       "id": "project-5",
-      "name": "adarsh-portfolio",
+      "name": "MyPortfolio",
       "createdAt": "2026-06-16T00:00:00Z",
-      "url": "https://github.com/adarsh-fpga/adarsh-portfolio",
+      "url": "https://github.com/adarsh-fpga/MyPortfolio",
       "description": "Personal portfolio website for VLSI, FPGA, RTL design, verification, and SoC integration work.",
       "isFork": false,
       "languages": [

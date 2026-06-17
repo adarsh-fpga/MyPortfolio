@@ -1,6 +1,6 @@
 # Adarsh Kumar Thakur - Portfolio
 
-Live site: [adarsh-fpga.github.io/adarsh-portfolio](https://adarsh-fpga.github.io/adarsh-portfolio/)
+Live site: [adarsh-fpga.github.io/MyPortfolio](https://adarsh-fpga.github.io/MyPortfolio/)
 
 Personal portfolio for my work as a VLSI & FPGA Engineer.
 
@@ -44,7 +44,7 @@ npm run build
 The site is configured for GitHub Pages at:
 
 ```text
-https://adarsh-fpga.github.io/adarsh-portfolio/
+https://adarsh-fpga.github.io/MyPortfolio/
 ```
 
 ## Credits

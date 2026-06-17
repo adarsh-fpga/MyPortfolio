@@ -6,6 +6,10 @@ class DegreeCard extends Component {
   render() {
     const degree = this.props.degree;
     const theme = this.props.theme;
+    const logo = degree.logo_path
+      ? require(`../../assets/images/${degree.logo_path}`)
+      : null;
+    const logoSrc = logo && (logo.default || logo);
     return (
       <div className="degree-card">
         {degree.logo_path && (
@@ -17,7 +21,7 @@ class DegreeCard extends Component {
                   maxHeight: "100%",
                   transform: "scale(0.9)",
                 }}
-                src={require(`../../assets/images/${degree.logo_path}`)}
+                src={logoSrc}
                 alt={degree.alt_name}
               />
             </div>

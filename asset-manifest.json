@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.592ec975.chunk.css",
-    "main.js": "/MyPortfolio/static/js/main.6bbdc3b4.chunk.js",
-    "main.js.map": "/MyPortfolio/static/js/main.6bbdc3b4.chunk.js.map",
+    "main.css": "/MyPortfolio/static/css/main.74b0857a.chunk.css",
+    "main.js": "/MyPortfolio/static/js/main.6cff8b86.chunk.js",
+    "main.js.map": "/MyPortfolio/static/js/main.6cff8b86.chunk.js.map",
     "runtime-main.js": "/MyPortfolio/static/js/runtime-main.59865eca.js",
     "runtime-main.js.map": "/MyPortfolio/static/js/runtime-main.59865eca.js.map",
-    "static/js/2.bb4e91cf.chunk.js": "/MyPortfolio/static/js/2.bb4e91cf.chunk.js",
-    "static/js/2.bb4e91cf.chunk.js.map": "/MyPortfolio/static/js/2.bb4e91cf.chunk.js.map",
+    "static/js/2.f3fe7b0b.chunk.js": "/MyPortfolio/static/js/2.f3fe7b0b.chunk.js",
+    "static/js/2.f3fe7b0b.chunk.js.map": "/MyPortfolio/static/js/2.f3fe7b0b.chunk.js.map",
     "index.html": "/MyPortfolio/index.html",
-    "precache-manifest.f63707b150a7a80c0a5d72bcf61ec7e6.js": "/MyPortfolio/precache-manifest.f63707b150a7a80c0a5d72bcf61ec7e6.js",
+    "precache-manifest.74e64e1ba162c2e11c16a2e5994d8de5.js": "/MyPortfolio/precache-manifest.74e64e1ba162c2e11c16a2e5994d8de5.js",
     "service-worker.js": "/MyPortfolio/service-worker.js",
-    "static/css/main.592ec975.chunk.css.map": "/MyPortfolio/static/css/main.592ec975.chunk.css.map",
+    "static/css/main.74b0857a.chunk.css.map": "/MyPortfolio/static/css/main.74b0857a.chunk.css.map",
     "static/media/index.css": "/MyPortfolio/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/cdac_logo.png": "/MyPortfolio/static/media/cdac_logo.1e5416a7.png",
     "static/media/certificate_logo.svg": "/MyPortfolio/static/media/certificate_logo.08c68af5.svg",
@@ -18,12 +18,13 @@
     "static/media/cu_logo.png": "/MyPortfolio/static/media/cu_logo.d3db93b5.png",
     "static/media/all.css": "/MyPortfolio/static/media/fa-solid-900.8e4a6dcc.eot",
     "static/media/nptel_logo.png": "/MyPortfolio/static/media/nptel_logo.14bc947a.png",
-    "static/media/profile_photo.png": "/MyPortfolio/static/media/profile_photo.e5ea94fa.png"
+    "static/media/profile_photo.png": "/MyPortfolio/static/media/profile_photo.e5ea94fa.png",
+    "static/media/rtl_design_verification.png": "/MyPortfolio/static/media/rtl_design_verification.4f8e4ddc.png"
   },
   "entrypoints": [
     "static/js/runtime-main.59865eca.js",
-    "static/js/2.bb4e91cf.chunk.js",
-    "static/css/main.592ec975.chunk.css",
-    "static/js/main.6bbdc3b4.chunk.js"
+    "static/js/2.f3fe7b0b.chunk.js",
+    "static/css/main.74b0857a.chunk.css",
+    "static/js/main.6cff8b86.chunk.js"
   ]
 }

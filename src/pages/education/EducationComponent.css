@@ -45,6 +45,50 @@
   text-align: center;
 }
 
+.education-summary {
+  margin: 22px auto 0;
+  max-width: 780px;
+}
+
+.cert-logo-strip {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.cert-logo-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  padding: 8px 12px;
+  min-height: 42px;
+  font-family: "Google Sans Regular";
+  font-size: 14px;
+}
+
+.cert-logo-pill img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.education-highlight-list {
+  margin: 0 auto;
+  padding-left: 22px;
+  max-width: 700px;
+  text-align: left;
+  font-family: "Google Sans Regular";
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.education-highlight-list li {
+  margin-bottom: 8px;
+}
+
 @media (max-width: 1380px) {
   .heading-text {
     font-size: 50px;
@@ -67,5 +111,14 @@
 
   .heading-div {
     flex-direction: column;
+  }
+
+  .cert-logo-strip {
+    justify-content: center;
+  }
+
+  .education-highlight-list {
+    font-size: 14px;
+    padding-left: 18px;
   }
 }

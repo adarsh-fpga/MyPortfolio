@@ -4,19 +4,24 @@ import "./GithubRepoCard.css";
 import { Fade } from "react-reveal";
 
 export default function GithubRepoCard({ repo, theme }) {
-  function openRepoinNewTab(url) {
-    if (!url) return;
-    var win = window.open(url, "_blank");
-    if (win) win.focus();
-  }
+  const CardTag = repo.url ? "a" : "div";
+  const cardProps = repo.url
+    ? {
+        href: repo.url,
+        target: "_blank",
+        rel: "noopener noreferrer",
+        "aria-label": `Open ${repo.name} repository`,
+      }
+    : {};
 
   return (
-    <div
+    <CardTag
+      {...cardProps}
       className={`repo-card-div ${repo.url ? "" : "repo-card-disabled"}`}
       style={{ backgroundColor: theme.highlight }}
     >
       <Fade bottom duration={2000} distance="40px">
-        <div key={repo.id} onClick={() => openRepoinNewTab(repo.url)}>
+        <div key={repo.id}>
           <div className="repo-name-div">
             <svg
               aria-hidden="true"
@@ -83,6 +88,6 @@ export default function GithubRepoCard({ repo, theme }) {
         </div> */}
         </div>
       </Fade>
-    </div>
+    </CardTag>
   );
 }

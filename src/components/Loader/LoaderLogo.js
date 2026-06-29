@@ -10,15 +10,15 @@ class LogoLoader extends React.Component {
         className="raw_logo"
         width="50%"
         height="40%"
-        viewBox="0 0 440 305"
+        viewBox="0 0 520 330"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
-        aria-label="Adarsh FPGA loading logo"
+        aria-label="Adarsh Thakur loading logo"
       >
         <rect
           className="loader-chip"
-          x="138"
+          x="178"
           y="62"
           width="164"
           height="164"
@@ -28,7 +28,7 @@ class LogoLoader extends React.Component {
         />
         <rect
           className="loader-core"
-          x="176"
+          x="216"
           y="100"
           width="88"
           height="88"
@@ -37,40 +37,40 @@ class LogoLoader extends React.Component {
           strokeWidth="5"
         />
 
-        <path className="loader-pin" d="M104 92H138" stroke={theme.body} />
-        <path className="loader-pin" d="M104 132H138" stroke={theme.body} />
-        <path className="loader-pin" d="M104 172H138" stroke={theme.body} />
-        <path className="loader-pin" d="M302 92H336" stroke={theme.body} />
-        <path className="loader-pin" d="M302 132H336" stroke={theme.body} />
-        <path className="loader-pin" d="M302 172H336" stroke={theme.body} />
-        <path className="loader-pin" d="M170 28V62" stroke={theme.body} />
-        <path className="loader-pin" d="M220 28V62" stroke={theme.body} />
-        <path className="loader-pin" d="M270 28V62" stroke={theme.body} />
-        <path className="loader-pin" d="M170 226V260" stroke={theme.body} />
-        <path className="loader-pin" d="M220 226V260" stroke={theme.body} />
-        <path className="loader-pin" d="M270 226V260" stroke={theme.body} />
+        <path className="loader-pin" d="M144 92H178" stroke={theme.body} />
+        <path className="loader-pin" d="M144 132H178" stroke={theme.body} />
+        <path className="loader-pin" d="M144 172H178" stroke={theme.body} />
+        <path className="loader-pin" d="M342 92H376" stroke={theme.body} />
+        <path className="loader-pin" d="M342 132H376" stroke={theme.body} />
+        <path className="loader-pin" d="M342 172H376" stroke={theme.body} />
+        <path className="loader-pin" d="M210 28V62" stroke={theme.body} />
+        <path className="loader-pin" d="M260 28V62" stroke={theme.body} />
+        <path className="loader-pin" d="M310 28V62" stroke={theme.body} />
+        <path className="loader-pin" d="M210 226V260" stroke={theme.body} />
+        <path className="loader-pin" d="M260 226V260" stroke={theme.body} />
+        <path className="loader-pin" d="M310 226V260" stroke={theme.body} />
 
         <path
           className="loader-trace"
-          d="M196 126H244M196 152H232M206 178H254"
+          d="M236 126H284M236 152H272M246 178H294"
           stroke={theme.body}
           strokeLinecap="round"
         />
-        <circle className="loader-node" cx="254" cy="178" r="6" fill={theme.body} />
-        <circle className="loader-node" cx="244" cy="126" r="6" fill={theme.body} />
-        <circle className="loader-node" cx="232" cy="152" r="6" fill={theme.body} />
+        <circle className="loader-node" cx="294" cy="178" r="6" fill={theme.body} />
+        <circle className="loader-node" cx="284" cy="126" r="6" fill={theme.body} />
+        <circle className="loader-node" cx="272" cy="152" r="6" fill={theme.body} />
 
         <text
-          x="220"
-          y="296"
+          x="260"
+          y="310"
           textAnchor="middle"
           fill={theme.body}
           fontFamily="Arial, Helvetica, sans-serif"
-          fontSize="34"
+          fontSize="30"
           fontWeight="700"
-          letterSpacing="4"
+          letterSpacing="2"
         >
-          FPGA
+          ADARSH THAKUR
         </text>
 
         <defs>

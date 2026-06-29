@@ -41,6 +41,17 @@ class Projects extends Component {
                 >
                   {projectsHeader["description"]}
                 </p>
+                <div className="project-highlights">
+                  {projectsHeader.highlights.map((item) => (
+                    <div
+                      className="project-highlight-item"
+                      key={item}
+                      style={{ backgroundColor: theme.highlight }}
+                    >
+                      <span style={{ color: theme.text }}>{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </Fade>

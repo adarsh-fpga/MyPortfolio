@@ -2,7 +2,7 @@
 
 // Website related settings
 const settings = {
-  isSplash: false,
+  isSplash: true,
 };
 
 const publicUrl = process.env.PUBLIC_URL || "";
@@ -24,11 +24,10 @@ const seo = {
 // Home Page
 const greeting = {
   title: "Adarsh Kumar Thakur",
-  logo_name: "Adarsh FPGA",
+  logo_name: "Adarsh Thakur",
   subTitle:
     "VLSI and FPGA Engineer focused on RTL design, SystemVerilog/UVM verification, FPGA prototyping, AXI/AXI4-Stream, crypto accelerators, and RISC-V SoC integration.",
   resumeLink: `${publicUrl}/docs/adarsh_kumar_thakur_resume.pdf`,
-  portfolio_repository: "https://github.com/adarsh-fpga/MyPortfolio",
   githubProfile: "https://github.com/adarsh-fpga",
 };
 
@@ -302,6 +301,12 @@ const experience = {
   subtitle: "Work and Training",
   description:
     "My experience spans FPGA crypto engine design, RTL development, AXI and AXI4-Stream verification, secure hardware modules, Vivado IP packaging, and RISC-V SoC integration.",
+  highlights: [
+    "RTL and verification ownership for secure crypto and SoC integration blocks.",
+    "Hands-on Vivado IP packaging, synthesis, static timing analysis, and board validation.",
+    "Protocol-focused verification across AXI, AXI4-Stream, UART, GPIO, timers, and memory interfaces.",
+    "Hardware-software co-verification with embedded C and RISC-V platform integration.",
+  ],
   sections: [
     {
       title: "Work",
@@ -344,6 +349,12 @@ const projectsHeader = {
   title: "Projects",
   description:
     "Selected projects across FPGA-based system design, RTL design and verification, AXI protocol verification, secure hardware acceleration, and embedded digital systems.",
+  highlights: [
+    "Secure hardware acceleration using cryptographic RTL blocks and FPGA validation flows.",
+    "Verification environments built around SystemVerilog, UVM, assertions, scoreboards, and coverage.",
+    "Embedded system projects combining sensors, control logic, safety features, and firmware.",
+    "Projects are organized for clean documentation, reusable modules, and future repository updates.",
+  ],
 };
 
 const publicationsHeader = {

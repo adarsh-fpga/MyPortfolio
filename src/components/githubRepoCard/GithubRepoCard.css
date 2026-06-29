@@ -4,6 +4,8 @@
   padding: 2rem;
   cursor: pointer;
   flex: 1 1 25%;
+  text-decoration: none;
+  display: block;
 }
 
 .repo-card-disabled {

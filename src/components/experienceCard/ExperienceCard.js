@@ -107,8 +107,9 @@ class ExperienceCard extends Component {
                   marginTop: 20,
                 }}
               >
-                <div className="repo-description" />
-                {experience["description"]}
+                <p className="experience-card-description">
+                  {experience["description"]}
+                </p>
               </div>
             </div>
           </div>

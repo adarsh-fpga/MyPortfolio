@@ -34,6 +34,18 @@ class Opensource extends Component {
           </>
         ) : (
           <div className="opensource-empty-state">
+            <div className="opensource-visual" aria-label="Open source workflow visual">
+              <div className="repo-window">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div className="branch-lane branch-lane-one"></div>
+              <div className="branch-lane branch-lane-two"></div>
+              <div className="repo-badge repo-badge-one">RTL</div>
+              <div className="repo-badge repo-badge-two">UVM</div>
+              <div className="repo-badge repo-badge-three">AXI</div>
+            </div>
             <h1 style={{ color: this.props.theme.text }}>Open Source</h1>
             <p style={{ color: this.props.theme.secondaryText }}>
               Public hardware and verification repositories will be added here

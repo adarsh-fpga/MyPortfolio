@@ -55,6 +55,23 @@
   font-family: "Google Sans Medium";
 }
 
+.experience-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 26px 20px 0;
+}
+
+.experience-highlight-item {
+  border-left: 4px solid #0e6ba8;
+  border-radius: 6px;
+  padding: 14px 16px;
+  text-align: left;
+  font-family: "Google Sans Regular";
+  font-size: 15px;
+  line-height: 1.45;
+}
+
 @media (max-width: 1380px) {
   .experience-heading-text {
     font-size: 50px;
@@ -84,5 +101,10 @@
     margin-right: 0px;
     line-height: normal;
     text-align: center;
+  }
+
+  .experience-highlights {
+    grid-template-columns: 1fr;
+    margin: 20px 0 0;
   }
 }

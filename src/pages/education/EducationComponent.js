@@ -14,6 +14,18 @@ import { Fade } from "react-reveal";
 class Education extends Component {
   render() {
     const theme = this.props.theme;
+    const certificationLogos = [
+      { name: "NPTEL", logo_path: "nptel_logo.png" },
+      { name: "TIMTS", logo_path: "certificate_logo.svg" },
+      { name: "AICRA", logo_path: "certificate_logo.svg" },
+      { name: "Coursera", logo_path: "coursera_logo.png" },
+      { name: "CDAC", logo_path: "cdac_logo.png" },
+    ];
+    const educationHighlights = [
+      "B.E. foundation in electronics, communication systems, digital logic, and microprocessors.",
+      "PG Diploma training focused on VLSI, Verilog, SystemVerilog, UVM, and FPGA tool flows.",
+      "Additional coursework across sensors, robotics, programming, electronics, and machine learning.",
+    ];
     return (
       <div className="education-main">
         <Header theme={this.props.theme} />
@@ -30,6 +42,31 @@ class Education extends Component {
                 <h3 className="heading-sub-text" style={{ color: theme.text }}>
                   Basic Qualification and Certifications
                 </h3>
+                <div className="education-summary">
+                  <div className="cert-logo-strip">
+                    {certificationLogos.map((item) => {
+                      const logo = require(`../../assets/images/${item.logo_path}`);
+                      const logoSrc = logo.default || logo;
+                      return (
+                        <div
+                          className="cert-logo-pill"
+                          key={item.name}
+                          style={{ backgroundColor: theme.highlight }}
+                        >
+                          <img src={logoSrc} alt={`${item.name} logo`} />
+                          <span style={{ color: theme.text }}>{item.name}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <ul className="education-highlight-list">
+                    {educationHighlights.map((item) => (
+                      <li key={item} style={{ color: theme.secondaryText }}>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
                 <CompetitiveSites logos={competitiveSites.competitiveSites} />
               </div>
             </div>

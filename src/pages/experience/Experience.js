@@ -39,6 +39,17 @@ class Experience extends Component {
                 >
                   {experience.description}
                 </p>
+                <div className="experience-highlights">
+                  {experience.highlights.map((item) => (
+                    <div
+                      className="experience-highlight-item"
+                      key={item}
+                      style={{ backgroundColor: theme.highlight }}
+                    >
+                      <span style={{ color: theme.text }}>{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </Fade>

@@ -8,6 +8,122 @@
   text-align: center;
 }
 
+.opensource-visual {
+  position: relative;
+  width: min(360px, 86vw);
+  height: 210px;
+  margin: 0 auto 24px;
+}
+
+.repo-window {
+  position: absolute;
+  left: 50%;
+  top: 28px;
+  transform: translateX(-50%);
+  width: 210px;
+  height: 126px;
+  border: 4px solid #001c55;
+  border-radius: 8px;
+  background: #a6e1fa;
+  box-shadow: rgba(0, 28, 85, 0.18) 0 18px 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 30px 22px 0;
+}
+
+.repo-window span {
+  display: block;
+  height: 8px;
+  border-radius: 999px;
+  background: #0e6ba8;
+  animation: repoLine 2.2s ease-in-out infinite;
+}
+
+.repo-window span:nth-child(2) {
+  width: 74%;
+  animation-delay: 0.25s;
+}
+
+.repo-window span:nth-child(3) {
+  width: 54%;
+  animation-delay: 0.5s;
+}
+
+.branch-lane {
+  position: absolute;
+  height: 4px;
+  background: #0e6ba8;
+  border-radius: 999px;
+  transform-origin: left center;
+}
+
+.branch-lane-one {
+  width: 108px;
+  left: 54px;
+  top: 154px;
+  transform: rotate(-28deg);
+}
+
+.branch-lane-two {
+  width: 118px;
+  right: 48px;
+  top: 154px;
+  transform: rotate(28deg);
+}
+
+.repo-badge {
+  position: absolute;
+  min-width: 58px;
+  padding: 9px 10px;
+  border-radius: 6px;
+  background: #001c55;
+  color: #edf9fe;
+  font-family: "Google Sans Bold";
+  font-size: 14px;
+  animation: badgeFloat 2.8s ease-in-out infinite;
+}
+
+.repo-badge-one {
+  left: 10px;
+  top: 154px;
+}
+
+.repo-badge-two {
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  animation-delay: 0.35s;
+}
+
+.repo-badge-three {
+  right: 8px;
+  top: 154px;
+  animation-delay: 0.7s;
+}
+
+@keyframes repoLine {
+  0%,
+  100% {
+    opacity: 0.42;
+    transform: scaleX(0.78);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes badgeFloat {
+  0%,
+  100% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -8px;
+  }
+}
+
 .opensource-empty-state h1 {
   font-family: "Google Sans Medium";
   font-size: 52px;

@@ -6,19 +6,19 @@
       "createdAt": "2024-06-01T00:00:00Z",
       "url": "",
       "status": "Repository will be added soon",
-      "description": "Secure authentication hardware integrating AES, SHA-256, HMAC, ECDSA, and TRNG modules with FPGA and RISC-V SoC platforms.",
+      "description": "FPGA crypto engine for FIDO2 authentication integrating SHA-256, HMAC, AES modes, ECDSA, TRNG, AXI peripherals, RISC-V SoC interfaces, synthesis, STA, and board validation.",
       "isFork": false,
       "languages": [
         { "name": "Verilog", "iconifyClass": "vscode-icons:file-type-verilog" },
-        { "name": "C", "iconifyClass": "logos-c" }
+        { "name": "C", "iconifyClass": "logos-c" },
+        { "name": "RISC-V", "iconifyClass": "simple-icons:riscv" }
       ]
     },
     {
       "id": "project-2",
       "name": "UVM-Based AXI4-Stream VIP",
-      "createdAt": "2024-01-15T00:00:00Z",
-      "url": "",
-      "status": "Repository will be added soon",
+      "createdAt": "2026-06-17T00:00:00Z",
+      "url": "https://github.com/adarsh-fpga/UVM-Based-AXI4-Stream-VIP",
       "description": "Configurable AXI4-Stream verification IP with master/slave support, assertions, constrained-random stimulus, and functional coverage.",
       "isFork": false,
       "languages": [
@@ -29,9 +29,8 @@
     {
       "id": "project-3",
       "name": "Gas Sensor System",
-      "createdAt": "2022-03-01T00:00:00Z",
-      "url": "",
-      "status": "Repository will be added soon",
+      "createdAt": "2026-06-17T00:00:00Z",
+      "url": "https://github.com/adarsh-fpga/Specific-gas-sensor",
       "description": "Gas detection system with signal processing, threshold-based alarm indication, and safety features for industrial and residential use cases.",
       "isFork": false,
       "languages": [
@@ -42,27 +41,13 @@
     {
       "id": "project-4",
       "name": "Head-Tilt Controlled Wheelchair",
-      "createdAt": "2022-06-01T00:00:00Z",
-      "url": "",
-      "status": "Repository will be added soon",
+      "createdAt": "2026-06-17T00:00:00Z",
+      "url": "https://github.com/adarsh-fpga/Head_tilt_controlled_wheelchair",
       "description": "Wheelchair navigation system using head-motion sensing with safety and emergency-stop mechanisms.",
       "isFork": false,
       "languages": [
         { "name": "C", "iconifyClass": "logos-c" },
         { "name": "C++", "iconifyClass": "logos-c-plusplus" }
-      ]
-    },
-    {
-      "id": "project-5",
-      "name": "MyPortfolio",
-      "createdAt": "2026-06-16T00:00:00Z",
-      "url": "https://github.com/adarsh-fpga/MyPortfolio",
-      "description": "Personal portfolio website for VLSI, FPGA, RTL design, verification, and SoC integration work.",
-      "isFork": false,
-      "languages": [
-        { "name": "JavaScript", "iconifyClass": "logos-javascript" },
-        { "name": "HTML", "iconifyClass": "logos-html-5" },
-        { "name": "CSS", "iconifyClass": "logos-css-3" }
       ]
     }
   ]

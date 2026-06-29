@@ -55,6 +55,24 @@
   margin-right: 20px;
   font-family: "Google Sans Medium";
 }
+
+.project-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 28px 20px 0;
+}
+
+.project-highlight-item {
+  border-left: 4px solid #0e6ba8;
+  border-radius: 6px;
+  padding: 14px 16px;
+  text-align: left;
+  font-family: "Google Sans Regular";
+  font-size: 15px;
+  line-height: 1.45;
+}
+
 .publications-heading-text-div {
   text-align: center;
   font-family: "Google Sans Regular";
@@ -106,6 +124,11 @@
     margin-left: 0px;
     line-height: normal;
     text-align: center;
+  }
+
+  .project-highlights {
+    grid-template-columns: 1fr;
+    margin: 20px 0 0;
   }
 
   .repo-cards-div-main {

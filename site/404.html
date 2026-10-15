@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redirecting…</title>
+  <meta name="robots" content="noindex" />
+  <script>
+    // Old React routes (/MyPortfolio/experience, /projects, …) map to sections on the single page.
+    var map = { home: "top", skills: "skills", experience: "experience", projects: "projects", education: "education", contact: "contact", resume: "top" };
+    var seg = location.pathname.replace(/^\/MyPortfolio\/?/, "").split("/")[0].toLowerCase();
+    location.replace("/MyPortfolio/" + (map[seg] ? "#" + map[seg] : ""));
+  </script>
+  <style>body{margin:0;background:#070b14;color:#e6edf7;font:16px system-ui,sans-serif;display:grid;place-items:center;min-height:100vh}a{color:#22d3ee}</style>
+</head>
+<body><p>Redirecting to <a href="/MyPortfolio/">the portfolio</a>…</p></body>
+</html>

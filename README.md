@@ -1,52 +1,29 @@
-# Adarsh Kumar Thakur - Portfolio
+# Adarsh Kumar Thakur — Portfolio
 
-Live site: [adarsh-fpga.github.io/MyPortfolio](https://adarsh-fpga.github.io/MyPortfolio/)
+Personal portfolio for RTL design, design verification and FPGA roles.
+Live at **https://adarsh-fpga.github.io/MyPortfolio/**
 
-Personal portfolio for my work as a VLSI & FPGA Engineer.
+## Structure
 
-## About
+Plain HTML, CSS and JavaScript — no build step.
 
-VLSI and FPGA Engineer experienced in RTL design, verification, FPGA prototyping, AXI protocols, and SoC integration using Verilog/SystemVerilog.
+```
+site/
+  index.html     page content (edit text here)
+  styles.css     theme tokens, layout, animations
+  main.js        interactions: PCB-trace canvas, waveform viewer, skills floorplan, SoC diagram
+  assets/        images, resume PDF, certificates
+  404.html       redirects old routes (/experience, /projects, …) to the matching section
+```
 
-Currently working as a Project Engineer at CDAC Chennai.
-
-## Focus Areas
-
-- RTL design with Verilog, SystemVerilog, and VHDL
-- FPGA prototyping, synthesis, implementation, and STA
-- SystemVerilog/UVM verification, assertions, and functional coverage
-- AXI and AXI4-Stream protocol verification
-- SoC integration with RISC-V, UART, GPIO, timers, and memory interfaces
-- Embedded C/C++ for hardware-software integration
-
-## Projects
-
-- FIDO2 Hardware Authenticator
-- UVM-Based AXI4-Stream VIP
-- Gas Sensor System
-- Head-Tilt Controlled Wheelchair
-
-## Local Development
+## Run locally
 
 ```bash
-npm install
-npm start
+python -m http.server 8000 -d site
 ```
 
-## Build
+## Deploy
 
-```bash
-npm run build
-```
+Every push to `master` runs `.github/workflows/deploy.yml`, which publishes `site/` to the `gh-pages` branch.
 
-## Deployment
-
-The site is configured for GitHub Pages at:
-
-```text
-https://adarsh-fpga.github.io/MyPortfolio/
-```
-
-## License
-
-MIT License
+To update the resume, replace `site/assets/docs/adarsh_kumar_thakur_resume.pdf`.

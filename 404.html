@@ -1,40 +1,17 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Single Page Apps for GitHub Pages</title>
-    <script type="text/javascript">
-      // This script takes the current url and converts the path and query
-      // string into just a query string, and then redirects the browser
-      // to the new url with only a query string and hash fragment,
-      // e.g. https://www.foo.tld/one/two?a=b&c=d#qwe, becomes
-      // https://www.foo.tld/?/one/two&a=b~and~c=d#qwe
-      // Note: this 404.html file must be at least 512 bytes for it to work
-      // with Internet Explorer (it is currently > 512 bytes)
-
-      var pathSegmentsToKeep = 1;
-
-      var l = window.location;
-      l.replace(
-        l.protocol +
-          "//" +
-          l.hostname +
-          (l.port ? ":" + l.port : "") +
-          l.pathname
-            .split("/")
-            .slice(0, 1 + pathSegmentsToKeep)
-            .join("/") +
-          "/?/" +
-          l.pathname
-            .slice(1)
-            .split("/")
-            .slice(pathSegmentsToKeep)
-            .join("/")
-            .replace(/&/g, "~and~") +
-          (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
-          l.hash
-      );
-    </script>
-  </head>
-  <body></body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redirecting…</title>
+  <meta name="robots" content="noindex" />
+  <script>
+    // Old React routes (/MyPortfolio/experience, /projects, …) map to sections on the single page.
+    var map = { home: "top", skills: "skills", experience: "experience", projects: "projects", education: "education", contact: "contact", resume: "top" };
+    var seg = location.pathname.replace(/^\/MyPortfolio\/?/, "").split("/")[0].toLowerCase();
+    location.replace("/MyPortfolio/" + (map[seg] ? "#" + map[seg] : ""));
+  </script>
+  <style>body{margin:0;background:#070b14;color:#e6edf7;font:16px system-ui,sans-serif;display:grid;place-items:center;min-height:100vh}a{color:#22d3ee}</style>
+</head>
+<body><p>Redirecting to <a href="/MyPortfolio/">the portfolio</a>…</p></body>
 </html>
